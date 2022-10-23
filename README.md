@@ -6,7 +6,7 @@
 
 ![](./Images/Screenshot%20(22).png)
 
-[Click Here to Visit Site](https://ritesh-interior-landing-page.netlify.app/)
+[Click Here to Visit Site](https://ritesh-hoisting-landing-page.netlify.app/)
 
 # ![](https://img.shields.io/badge/-Technologies%20Used-blue)
 ```
