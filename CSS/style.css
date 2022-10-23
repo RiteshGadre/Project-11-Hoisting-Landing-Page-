@@ -1,0 +1,815 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 10px;
+    --font1: 'Poppins';
+    --font2: 'Sans-serif';
+    --item-color: #808080;
+    --btn-color: #41acf4;
+    --btn-border-color: #83cbf8;
+    --heading-text-color: #1d2b4f;
+    --btn-bg-color: #0796f2;
+    --text-color: #9e9dab;
+    --active-color: #353535;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+/* Navbar Section - completed*/
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 4rem;
+}
+
+.logo{
+    width: 11rem;
+}
+
+.items{
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--item-color);
+    font-weight: bold;
+    list-style: none;
+    width: 45%;
+}
+
+.item:hover{
+    color: #ffa500;
+}
+
+.btn{
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    color: var(--btn-bg-color);
+    outline: 2px solid var(--btn-bg-color);
+    border-radius: 1rem;
+}
+
+.bar{
+    font-weight: 900;
+    display: none;
+}
+
+.logo, .items, .btn, .bar{
+    cursor: pointer;
+}
+
+/* intro section - completed */
+.intro{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin: 8rem 0;
+}
+
+.intro .left-section{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 50%;
+}
+
+.intro .heading{
+    font-size: 4.5rem;
+    font-weight: 900;
+    /* margin-bottom: 2rem; */
+    line-height: 6rem;
+}
+
+.intro .para{
+    font-size: 1.5rem;
+    color: var(--item-color);
+    line-height: 2.5rem;
+}
+
+.intro-btn{
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    height: 6rem;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--btn-bg-color);
+    border-radius: 1rem;
+}
+
+.intro img{
+    width: 50rem;
+}
+
+
+.intro-section1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 4rem;
+}
+
+.intro-section2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 4rem;
+}
+
+.intro-section3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 4rem;
+}
+
+/* Services */
+.services{
+    display: flex;
+    flex-direction: column;
+    margin: 8rem 0;
+    gap: 10rem;
+}
+
+.services .text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 4rem;
+}
+
+.services .text .heading {
+    font-size: 3.8rem;
+    font-weight: 700;
+    width: 50%;
+}
+
+.services .text .details{
+    font-size: 1.5rem;
+    width: 51rem;
+    line-height: 2.3rem;
+    color: var(--text-color);
+}
+
+.services img{
+    width: 4.5rem;
+}
+
+.services .heading{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.services .details {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: var(--item-color);
+    text-transform: capitalize;
+}
+
+.service-avail{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    margin: 0 4rem;
+    column-gap: 6rem;
+    row-gap: 5rem;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Pricing section - Completed*/
+.pricing{
+    margin: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #0796f2;
+    padding: 5rem;
+    gap: 5rem;
+
+}
+
+.pricing h1{
+    margin: 0 auto;
+    font-size: 4.5rem;
+    color: white;
+}
+
+
+.pricing-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: blue; */
+    gap: 3rem;
+}
+
+.pricing-card{
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.card-heading{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 5rem;
+    gap: 1rem;
+}
+
+.card-heading h2{
+    font-size: 2.5rem;
+}
+
+.active-card h2{
+    color: #ffffff;
+}
+
+.card-heading p{
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.packages{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    padding: 3rem 5rem;
+}
+
+.package{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.6rem;
+    gap: .5rem;
+}
+
+.tick{
+    width: 3rem;
+}
+
+.card-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 5rem 5rem 5rem;
+    gap: 1rem;
+}
+
+.card-bottom h3{
+    font-size: 3rem;
+}
+
+.card-bottom p{
+    font-size: 1.5rem;
+    color: var(--item-color);
+}
+
+.card-bottom .per{
+    color: var(--item-color);
+}
+
+.payment-btn{
+    font-size: 2rem;
+    height: 5rem;
+    width: 20rem;
+    outline: 2px solid var(--btn-bg-color);
+    color: var(--btn-bg-color);
+    font-weight: 600;
+    border: none;
+    background: no-repeat;
+    border-radius: 1rem;
+}
+
+.active-btn{
+    color: #ffffff;
+    background-color: var(--btn-bg-color);
+}
+
+.active-card{
+    border-radius: 1rem;
+    background-color: var(--active-color);
+}
+
+/* Reviews Section - Completed*/
+.reviews{
+    margin:  10rem 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.review-heading{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 4rem;
+    gap: 3rem;
+}
+
+.review-heading h1{
+    font-size: 3.5rem;
+}
+
+.review-heading p{
+    font-size: 2rem;
+    color: var(--active-color);
+    width: 60%;
+    margin: 0 auto;
+    line-height: 3rem;
+}
+
+.review-messages{
+    margin: 0 4rem;
+    display: flex;
+    justify-content: center;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.review-message{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 40%;
+    outline: 1px solid #d9d9d9;
+    padding: 3rem 5rem;
+}
+
+.review-message p{
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.profile-detail{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+    
+    align-items: center;
+    /* align-items: center; */
+}
+
+.profile-detail h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.profile-detail p{
+    font-size: 1.5rem;
+    color: var(--item-color);
+}
+
+.author-details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+/* Registration Section */
+.registration{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10rem 0rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-color: #0796f2;
+    color: white;
+}
+
+.registration .heading{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-left: 4rem;
+    width: 50%;
+}
+
+.registration .heading h2{
+    font-size: 4.5rem;
+    line-height: 5rem;
+}
+
+.registration .heading p{
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.registration .register-btn{
+    font-size: 2rem;
+    margin-right: 10rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16rem;
+    text-align: center;
+    outline: 2px solid #ffffff;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 0.5rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    justify-content: space-between;
+    margin: 10rem 4rem;
+    align-items: center;
+}
+
+footer .left-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30%;
+}
+
+footer .left-section p{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+footer .right-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    gap: 3rem;
+}
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.foot h2{
+    font-size: 2rem;
+}
+
+.points{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--item-color);
+    list-style: none;
+}
+
+.social-media .points{
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Media Queries */
+/* For Card Broke Issue */
+@media screen and (max-width: 1100px){
+    .pricing-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .review-message{
+        width: 80%;
+    }
+
+    
+}
+
+/* For Tablet */
+@media screen and (max-width: 768px){
+    .items, .btn{
+        display: none;
+    }
+
+    .bar{
+        display: block;
+        font-size: 2.5rem;
+    }
+
+    .intro .left-section{
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro .heading{
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+
+    .intro img{
+        width: 100%;
+    }
+
+    .intro-btn{
+        margin: 0 auto;
+    }
+
+    .intro-section1{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .intro-section2{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .intro-section3{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .services .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .services .text .img{
+        width: 100%;
+    }
+
+    .services .text .heading{
+        width: 80%;
+        text-align: center;
+        line-height: 4rem;
+    }
+
+    .services .text .details{
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .service-avail{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing h1{
+        text-align: center;
+    }
+
+    .review-message{
+        width: 100%;
+    }
+
+    .registration{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+        gap: 2rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+
+    .registration .heading{
+        padding: 0 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: auto;
+        text-align: center;
+    }
+
+    .registration .register-btn{
+        margin-right: 0;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    footer .right-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer .left-section{
+        align-items: center;
+    }
+    
+    .foot h2{
+        text-align: center;
+    }
+
+    .foot .points{
+        text-align: center;
+    }
+    
+}
+
+/* For  Mobile */
+@media screen and (max-width: 504px){
+    .navbar{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .intro-btn {
+        font-size: 1.7rem;
+        width: 17rem;
+        height: 4rem;
+    }
+
+    .service-avail{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .service img{
+        margin: 0 auto;
+    }
+
+    .service .heading{
+        margin: 0 auto;
+    }
+
+    .pricing-card{
+        margin-left: 0;
+        margin-right: 0;
+        width: 90%;
+    }
+    
+    .pricing-card img{
+        width: 2rem;
+    }
+
+    .card-heading{
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+    }
+
+    .packages{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .card-bottom{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .review-heading h1{
+        font-size: 3rem;
+
+    }
+
+    .review-heading p{
+        width: 100%;
+        font-size: 1.5rem;
+        margin: 0;
+        line-height: 2rem;
+
+    }
+
+    .review-message{
+        width: 39rem;
+    }
+
+    .review-message p{
+        line-height: 2rem;
+    }
+
+    .reviews{
+        margin: 10rem 2rem;
+    }
+
+}
+
+@media screen and (max-width: 360px){
+    .pricing-card{
+        margin-left: 0;
+        margin-right: 0;
+        width: 24rem;
+    }
+    
+    .pricing-card img{
+        width: 2rem;
+    }
+
+    .card-heading{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+    }
+
+    .card-heading h2{
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .card-heading p{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .packages{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .package p{
+        font-size: 1.3rem;
+    }
+
+    .card-bottom{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-bottom h3{
+        text-align: center;
+
+    }
+
+    .card-bottom p{
+        text-align: center;
+
+    }
+    
+
+    .card-bottom .payment-btn{
+        height: 4rem;
+        width: 14rem;
+        border-radius: 5px;
+    }
+
+    .profile-detail h3{
+        font-size: 1.5rem;
+    }
+
+    .profile-detail p{
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .registration .heading h2{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    
+}
